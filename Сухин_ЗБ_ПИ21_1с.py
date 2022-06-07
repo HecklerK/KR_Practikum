@@ -60,7 +60,7 @@ def calculate(path2file):
 
     while line:
         if (len(string) != 0):
-            string += ", "
+            string += ","
         
         value = line[:-1].split("    ")
 
