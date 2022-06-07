@@ -94,7 +94,7 @@ def substring_slice(path2file_1,path2file_2):
         if (len(string) != 0):
             string += " "
 
-        s = line2[:-1].split(" ")
+        s = line2.replace("\n", "").split(" ")
 
         string += line1[int(s[0]):int(s[1])+1]
 
