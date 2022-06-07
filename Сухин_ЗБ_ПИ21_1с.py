@@ -5,7 +5,7 @@ def fact(x):
   pass
 
 def filter_even(li):
-  return filter(lambda x: x%2 == 0, li)
+  return list(filter(lambda x: x%2 == 0, li))
   pass
 
 def square(li):
