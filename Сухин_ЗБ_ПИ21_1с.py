@@ -9,7 +9,7 @@ def filter_even(li):
   pass
 
 def square(li):
-  return map(lambda x: x**2, li)
+  return list(map(lambda x: x**2, li))
   pass
 
 def bin_search(li, element):
