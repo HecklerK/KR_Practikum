@@ -31,8 +31,7 @@ def bin_search(li, element):
   pass
 
 def is_palindrome(string):
-    string.lower()
-    string.replace(" ", "")
+    string = string.lower().replace(" ", "")
     start = 0
     end = len(string) - 1
     result = "YES"
@@ -62,7 +61,7 @@ def calculate(path2file):
         if (len(string) != 0):
             string += ","
         
-        value = line.split("    ").replace("\n", "")
+        value = line.replace("\n", "").split("    ")
 
         if value[0] == '+':
             string += str(int(value[1]) + int(value[2]))
